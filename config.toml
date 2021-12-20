@@ -1,0 +1,199 @@
+baseURL = 'https://blog.ryoii.cn/'
+defaultContentLanguage = "zh-cn"
+languageCode = 'zh-CN'
+hasCJKLanguage = true
+
+title = 'Ryoii Blog'
+
+theme = 'DoIt'
+
+[params]
+  version = '0.2.X'
+  title = 'Ryoii Blog'
+  description = 'Ryoii Blog Site'
+  defaultTheme = 'dark'
+  gitRepo = 'https://ryoii.github.com'
+  dateFormat = '2006-01-02'
+  images = ['/logo.png']
+  enablePWA = false
+  license = ''
+
+  [params.app]
+    title = 'Ryoii Blog'
+    noFavicon = false
+    svgFavion = ''
+    iconColor = '#5bbad5'
+    tileColor = '#da532c'
+
+  [params.search]
+    enable = true
+    type = 'fuse'
+    contentLength = 4000
+    placeholder = ''
+    maxResultLength = 10
+    snippetLength = 50
+    highlightTag = 'em'
+    absoluteURL = false
+
+    [params.search.algolia]
+    index = ''
+    appID = ''
+    searchKey = ''
+
+    [params.search.fuse]
+    isCaseSensitive = false
+    minMatchCharLength = 2
+    findAllMatches = false
+    location = 0
+    threshold = 0.3
+    distance = 100
+    ignoreLocation = false
+    useExtendedSearch = false
+    ignoreFieldNorm = false
+
+[params.header]
+  desktopMode = "fixed"
+  mobileMode = "auto"
+  themeChangeMode = "switch"
+
+  [params.header.title]
+    # LOGO 的 URL
+    name = "Ryoii Blog"
+    pre = ""
+    post = ""
+    typeit = true
+
+  [params.footer]
+    enable = true
+    custom = ''
+    hugo = true
+    copyright = true
+    author = true
+    # 网站创立年份
+    since = 2021
+    icp = ""
+    license = ''
+  
+  [params.section]
+    paginate = 20
+    dateFormat = "2006-01-02"
+    rss = 10
+    [params.section.recentlyUpdated]
+      enable = true
+      rss = true
+      days = 30
+      maxCount = 10
+  
+  [params.list]
+    paginate = 20
+    dateFormat = "2006-01-02"
+    rss = 10
+
+  [params.home]
+    rss = 10
+    [params.home.profile]
+      enable = false
+      gravatarEmail = "ryoii@foxmail.com"
+      avatarURL = ""
+      title = ""
+      subtitle = ""
+      typeit = true
+      social = true
+      disclaimer = ""
+    [params.home.posts]
+      enable = true
+      paginate = 6
+      defaultHiddenFromHomePage = false
+
+  [params.social]
+    GitHub = "https://ryoii.github.com"
+    Email = "ryoii@foxmail.com"
+    RSS = true
+
+  [params.page]
+    hiddenFromHomePage = false
+    hiddenFromSearch = false
+    twemoji = false
+    lightgallery = false
+    ruby = true
+    fraction = true
+    fontawesome = true
+    linkToMarkdown = true
+    linkToEdit = false
+    rssFullText = false
+    pageStyle = "normal"
+    seriesNavigation = true
+    [params.page.outdatedArticleReminder]
+      enable = false
+      reminder = 90
+      warning = 180
+    [params.page.toc]
+      enable = true
+      keepStatic = false
+      auto = true
+    [params.page.code]
+      copy = true
+      maxShownLines = 10
+    [params.page.math]
+      enable = true
+      copyTex = true
+      mhchem = true
+    [params.page.comment]
+      enable = true
+
+  [params.typeit]
+    speed = 100
+    cursorSpeed = 1000
+    cursorChar = "|"
+    duration = -1
+
+[menu]
+  [[menu.main]]
+    indentifier = 'posts'
+    pre = ''
+    post = ''
+    name = '文章'
+    url = '/posts/'
+    title = ''
+    weight = 1
+  [[menu.main]]
+    indentifier = 'tags'
+    pre = ''
+    post = ''
+    name = '标签'
+    url = '/tags/'
+    title = ''
+    weight = 2
+  [[menu.main]]
+  indentifier = 'categories'
+    pre = ''
+    post = ''
+    name = '分类'
+    url = '/categories/'
+    title = ''
+    weight = 3
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = false
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 6
+
+[author]
+  name = "ryoii"

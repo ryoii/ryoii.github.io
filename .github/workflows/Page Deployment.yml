@@ -1,0 +1,29 @@
+name: Page Deployment
+on:
+  push:
+    branch: ['master']
+
+jobs:
+  build:
+    name: Deployment
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout Theme
+        uses: actions/checkout@v2
+        with:
+          submodules: recursive
+          fetch-depth: 0
+      
+      - name: Setup Hogo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+
+      - name: Build with Hugo
+        run: hugo --minify
+
+      - name: Push to Master
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: public

@@ -1,0 +1,7 @@
+# untrack executable
+/hugo.exe
+/hugo
+
+# untrack public
+/public
+/*.lock
