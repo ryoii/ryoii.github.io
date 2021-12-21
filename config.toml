@@ -147,6 +147,28 @@ theme = 'DoIt'
     cursorChar = "|"
     duration = -1
 
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = false
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 6
+
 [menu]
   [[menu.main]]
     indentifier = 'posts'
@@ -172,28 +194,27 @@ theme = 'DoIt'
     url = '/categories/'
     title = ''
     weight = 3
-
-[markup]
-  [markup.highlight]
-    codeFences = true
-    guessSyntax = true
-    lineNos = true
-    lineNumbersInTable = true
-    noClasses = false
-  [markup.goldmark]
-    [markup.goldmark.extensions]
-      definitionList = true
-      footnote = true
-      linkify = true
-      strikethrough = true
-      table = true
-      taskList = true
-      typographer = true
-    [markup.goldmark.renderer]
-      unsafe = true
-  [markup.tableOfContents]
-    startLevel = 2
-    endLevel = 6
-
-[author]
-  name = "ryoii"
+  [[menu.main]]
+  indentifier = 'series'
+    pre = ''
+    post = ''
+    name = '系列'
+    url = '/series/'
+    title = ''
+    weight = 4
+  [[menu.main]]
+  indentifier = 'about'
+    pre = ''
+    post = ''
+    name = '关于'
+    url = 'about'
+    title = ''
+    weight = 99
+  [[menu.main]]
+  identifier = "github"
+  pre = "<i class='fab fa-github fa-fw'></i>"
+  post = ""
+  name = ""
+  url = "https://github.com/ryoii"
+  title = "GitHub"
+  weight = 100
