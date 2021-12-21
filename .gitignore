@@ -5,3 +5,4 @@
 # untrack public
 /public
 /*.lock
+/resources/_gen
