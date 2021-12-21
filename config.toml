@@ -76,7 +76,7 @@ theme = 'DoIt'
   
   [params.section]
     paginate = 20
-    dateFormat = "2006-01-02"
+    dateFormat = "01-02"
     rss = 10
     [params.section.recentlyUpdated]
       enable = true
@@ -152,7 +152,7 @@ theme = 'DoIt'
     indentifier = 'posts'
     pre = ''
     post = ''
-    name = '文章'
+    name = '所有文章'
     url = '/posts/'
     title = ''
     weight = 1
