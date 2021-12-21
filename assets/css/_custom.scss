@@ -1,0 +1,12 @@
+.single {
+  .content > h2 {
+    > .header-mark::before {
+      font-family: "Font Awesome 5 Free";
+      content: "\f0c1 ";
+    }
+
+    > .header-mark:hover::before {
+       color: $global-font-color-dark;
+    }
+  }
+}
