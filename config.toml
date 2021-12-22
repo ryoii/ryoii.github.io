@@ -135,6 +135,9 @@ theme = 'DoIt'
       mhchem = true
     [params.page.comment]
       enable = true
+      [params.page.comment.disqus]
+        enable = true
+        shortname = "ryoii-blog"
 
   [params.typeit]
     speed = 100
