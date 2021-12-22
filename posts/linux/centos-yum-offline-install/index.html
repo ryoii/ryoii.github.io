@@ -17,7 +17,7 @@
 <meta name=apple-mobile-web-app-title content="Ryoii Blog">
 <meta name=theme-color content="#f8f8f8"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=canonical href=https://blog.ryoii.cn/posts/linux/centos-yum-offline-install/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=preload as=style onload="this.onload=null,this.rel='stylesheet'" href=/lib/fontawesome-free/all.min.css>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=canonical href=https://blog.ryoii.cn/posts/linux/centos-yum-offline-install/><link rel=next href=https://blog.ryoii.cn/posts/mysql/mysql-charset-reset/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=preload as=style onload="this.onload=null,this.rel='stylesheet'" href=/lib/fontawesome-free/all.min.css>
 <noscript><link rel=stylesheet href=/lib/fontawesome-free/all.min.css></noscript><link rel=preload as=style onload="this.onload=null,this.rel='stylesheet'" href=/lib/animate/animate.min.css>
 <noscript><link rel=stylesheet href=/lib/animate/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Centos 离线安装 yum 软件","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/blog.ryoii.cn\/posts\/linux\/centos-yum-offline-install\/"},"genre":"posts","keywords":"centos, yum, 运维","wordcount":337,"url":"https:\/\/blog.ryoii.cn\/posts\/linux\/centos-yum-offline-install\/","datePublished":"2021-12-21T14:48:53+08:00","dateModified":"2021-12-21T14:48:53+08:00","publisher":{"@type":"Organization","name":"作者"},"authors":[{"@type":"Person","name":"ryoii"}],"description":""}</script></head>
 <body header-desktop=fixed header-mobile=auto><script type=text/javascript>function setTheme(a){document.body.setAttribute('theme',a)}function saveTheme(a){window.localStorage&&localStorage.setItem('theme',a)}function getMeta(b){const a=document.getElementsByTagName('meta');for(let c=0;c<a.length;c++)if(a[c].getAttribute('name')===b)return a[c];return''}if(window.localStorage&&localStorage.getItem('theme')){let a=localStorage.getItem('theme');a==='light'||a==='dark'||a==='black'?setTheme(a):window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?setTheme('dark'):setTheme('light')}else'dark'==='light'||'dark'==='dark'||'dark'==='black'?(setTheme('dark'),saveTheme('dark')):(saveTheme('auto'),window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?setTheme('dark'):setTheme('light'));let metaColors={light:'#f8f8f8',dark:'#252627',black:'#000000'};getMeta('theme-color').content=metaColors[document.body.getAttribute('theme')]</script>
@@ -179,7 +179,8 @@ rpm -Uvh --nodeps *.rpm
 <span><a href=javascript:void(0); onclick=window.history.back()>返回</a></span>&nbsp;|&nbsp;<span><a href=/>主页</a></span>
 </section>
 </div>
-<div class=post-nav></div>
+<div class=post-nav>
+<a href=/posts/mysql/mysql-charset-reset/ class=next rel=next title="MySQL 批量修改字符集">MySQL 批量修改字符集<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 <div id=comments></div></article></div>
 </main><footer class=footer>
