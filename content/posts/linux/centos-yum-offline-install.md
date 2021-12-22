@@ -25,8 +25,8 @@ yum install -y yum-utils
 ### 下载所有依赖包
 
 ```bash
-# 下载 gcc—g++,libevent 及其依赖
-yumdownloader gcc-g++ libevent
+# 下载 gcc—c++,libevent 及其依赖
+yumdownloader gcc-c++ libevent
 ```
 
 {{< admonition type="warning" title="注意" open=true >}}
