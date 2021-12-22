@@ -133,7 +133,7 @@ theme = 'DoIt'
       auto = true
     [params.page.code]
       copy = true
-      maxShownLines = 10
+      maxShownLines = 30
     [params.page.math]
       enable = true
       copyTex = true
